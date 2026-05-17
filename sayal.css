@@ -211,19 +211,17 @@ height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-
   background-color: rgb(30, 56, 62);
+  height: 70vh;
 }
 .contact{
   display: flex;
-  height: 60vh;
      width: 70%;
-
-  
-
 }
 .formimg{
-
-  height: 90px;
   width: 200px;
+}
+.form button{
+  padding: 5px;
+  border-radius: 8px;
 }
