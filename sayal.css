@@ -1,0 +1,229 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+.body {
+  background-color: grey;
+}
+
+
+
+.hero {
+  display: flex;
+  position: relative;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+
+
+}
+
+.bg_hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  object-fit: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+  filter: brightness(60%);
+  background-size: cover;
+  width: 100%;
+
+}
+
+.bg_hero video {
+  object-fit: cover;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  width: 80%;
+  height: 8vh;
+  z-index: 1000;
+  margin-top: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.topic {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+}
+
+.topic a {
+  text-decoration: none;
+  color: rgb(246, 241, 241);
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 10px;
+  padding: 10px;
+  transition: 300ms;
+}
+
+.topic a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(246, 241, 241);
+  transition: width .3s;
+}
+
+.topic a:hover {
+  font-family: 'Times New Roman', Times, serif;
+
+  background-color: rgb(133, 129, 129);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.topic a:hover::after {
+  width: 100%;
+}
+
+.search {
+  display: flex;
+
+}
+
+.search a {
+  text-decoration: none;
+  color: white;
+  transition: 200ms;
+  margin-right: 30px;
+}
+
+.search a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(246, 241, 241);
+  transition: width .3s;
+
+}
+
+.search a:hover::after {
+  width: 100%;
+
+}
+
+.search a:hover {
+  background-color: rgb(133, 129, 129);
+  border-radius: 5px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.intro {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+  margin-bottom: 300px;
+  z-index: 2;
+}
+
+.intro h1 {
+  font-family: cursive;
+  font-size: 4rem;
+  font-weight: bold;
+  color: transparent;
+  /* text itself is transparent */
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.2));
+  -webkit-background-clip: text;
+  /* clip gradient to text */
+  background-clip: text;
+  text-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+  /* glowing glassy shadow */
+}
+.about{
+display: flex;
+width: 75%;
+display: grid;
+grid-template-columns: 1fr 3fr;
+padding: 30px;
+gap: 40px;
+}
+
+.about img{
+  width: 250px;
+  height: 250px;
+  border-radius: 20%;
+}
+.introprt{
+background: rgba(255, 255, 255, 0.1);   /* transparent white layer */
+  backdrop-filter: blur(12px);            /* frosted blur effect */
+  -webkit-backdrop-filter: blur(12px);    /* Safari support */
+  border-radius: 12px;                    /* smooth rounded edges */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* subtle glass border */
+  padding: 30px;
+  color: white;                           /* text stands out */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2); /* soft shadow for depth */
+
+}
+.maint{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    background-color: rgb(30, 56, 62);
+    backdrop-filter: blur(10px);
+    height: 60vh;
+
+}
+@media (max-width: 768px) {
+
+  .about{
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: start;
+
+  }
+  .maint{
+    height: auto;
+  }
+}
+.form{
+background-color: grey;
+padding: 70px ;
+border-radius: 10px;
+background-color: rgb(255, 255, 255, 0.1);
+backdrop-filter: blur(20px);
+box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+height: 80%;
+}
+.maincontact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(30, 56, 62);
+}
+.contact{
+  display: flex;
+  height: 60vh;
+     width: 70%;
+
+  
+
+}
+.formimg{
+
+  height: 100px;
+  width: 200px;
+}
