@@ -206,6 +206,8 @@ background-color: rgb(255, 255, 255, 0.1);
 backdrop-filter: blur(20px);
 box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 height: 80%;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* subtle glass border */
+
 }
 .maincontact{
   display: flex;
@@ -213,10 +215,14 @@ height: 80%;
   align-items: center;
   background-color: rgb(30, 56, 62);
   height: 70vh;
+  color: white;
+
 }
 .contact{
   display: flex;
      width: 70%;
+     
+
 }
 .formimg{
   width: 200px;
@@ -224,4 +230,16 @@ height: 80%;
 .form button{
   padding: 5px;
   border-radius: 8px;
+}
+.footer{
+    background-color: rgb(30, 56, 62);
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.2); /* soft shadow for depth */
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer h1{
+  color: white;
+  text-shadow: 2px 2px rgb(231, 225, 225);
 }
